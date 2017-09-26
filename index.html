@@ -1,172 +1,649 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<head profile="http://www.w3.org/2005/10/profile">
+<link rel="icon" 
+      type="image/png" 
+      href="images/fb-32.png">
+<title>Fady Bishara</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">-->
+<link rel="stylesheet" href="css/academicons-1.8.0/css/academicons.css"/>
+<link rel="stylesheet" href="css/jabref.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/style.css">
 <style>
-body {font-family: "Lato", sans-serif; font-size: 12pt}
+body {font-family: "Raleway", sans-serif; font-size: 14pt}
 h1 {font-family: "Raleway", sans-serif;font-weight: bolder; color: #555555 }
 .mySlides {display: none}
 </style>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
 <body>
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-card-2">
+  <nav class="navbar navbar-default w3-bar w3-white w3-card-2">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
     <a href="#cv" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CV</a>
-    <a href="#pubs" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PUBLICATIONS</a>
-    <a href="#pubs" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEACHING</a>
+    <a href="#talks" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TALKS</a>
+    <a href="#activities" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ACTIVITIES</a>
+    <!--<a href="#teaching" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEACHING</a>-->
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <!--
+   <!-- 
     <div class="w3-dropdown-hover w3-hide-small">
       <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-        <a href="#" class="w3-bar-item w3-button">Extras</a>
-        <a href="#" class="w3-bar-item w3-button">Media</a>
+        <a href="#teaching" class="w3-bar-item w3-button">TEACHING</a>
+        <a href="#outreach" class="w3-bar-item w3-button">OUTREACH</a>
+        <a href="#software" class="w3-bar-item w3-button">SOFTWARE</a>
       </div>
     </div>
-    -->
+  --> 
     <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
+  </nav>
 </div>
 
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large">TOUR</a>
+  <a href="#cv" class="w3-bar-item w3-button w3-padding-large">CV</a>
+  <a href="#talks" class="w3-bar-item w3-button w3-padding-large">TALKS</a>
+  <a href="#activities" class="w3-bar-item w3-button w3-padding-large">ACTIVITIES</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">MERCH</a>
 </div>
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Automatic Slideshow Images -->
+	<div id="profile">
   <div class="w3-container w3-content w3-center w3-padding-48" style="max-width:800px">
     <div class="w3-container w3-third w3-right">
-      <img src="/images/img_avatar3.png" alt="Avatar" style="max-width:300px">
+      <img src="images/fb.png" alt="Avatar" style="max-width:250px">
     </div>
     <div class="w3-container w3-left w3-twothirds" style="width:50%" align="left">
     	<h1>Fady Bishara</h1>
-        <p>Postdoctoral Researcher</br>
-		Rudolf Peierls Centre for Theoretical Physics</p>
+    	<div class="navbar text">Postdoctoral Research Assistant</br>University of Oxford</div>
+      <ul class="social-icon" aria-hidden="true">
+        <li>
+          <a itemprop="sameAs" href="mailto:fady.bishara@physics.ox.ac.uk" target="_blank">
+            <i class="fa fa-envelope big-icon"></i>
+          </a>
+        </li>
+        <li>
+          <a itemprop="sameAs" href="http://inspirehep.net/search?p=exactauthor%3AF.Bishara.1&sf=earliestdate" target="_blank">
+            <i class="ai ai-inspire big-icon"></i>
+          </a>
+        </li>
+<!--
+  <li>
+          <a itemprop="sameAs" href="https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ" target="_blank">
+            <i class="ai ai-orcid big-icon"></i>
+					</a>
+  </li>
+-->
+        <li>
+          <a itemprop="sameAs" href="https://directdm.github.io" target="_blank">
+            <i class="fa fa-github big-icon"></i>
+          </a>
+        </li>
+        
+      </ul>
     </div>
   </div>
+	</div>
 
   <!-- The Band Section -->
   <div class="w3-container w3-content w3-center w3-padding-48" style="max-width:800px" id="cv">
     <h2 class="w3-wide">CURRICULUM VITAE</h2>
-    <p class="w3-opacity"><i>We love music</i></p>
-    <p class="w3-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <!--<p class="w3-opacity"><i>We love music</i></p>-->
+    <p class="w3-justify publist">
+    I'm a postdoctoral researcher in theoretical particle physics at the University of Oxford. My research mainly focuses on beyond the standard model physics and particularly, on dark matter model building and signatures.</p>
+<!--
+    <p class="w3-left-align publist">
+    <a itemprop="sameAs" href="mailto:test@example.org" target="_blank">
+    <i class="fa fa-file-pdf-o fa-lg"></i>&ensp;Download full C.V.</a>
+    </p>
+-->
+  <div class="w3-col m5 w3-large w3-margin-bottom w3-left-align">
+  <h3 class="w3-bottombar">Interests</h3>
+	<ul class="fa-ul" itemscope>
+	<li><i class="fa-li fa fa-chevron-right big-icon" aria-hidden="true"></i>
+    Beyond the standard model
+  </li>
+	<li><i class="fa-li fa fa-chevron-right big-icon" aria-hidden="true"></i>
+    Dark matter
+  </li>
+	<li><i class="fa-li fa fa-chevron-right big-icon" aria-hidden="true"></i>
+    Higgs physics
+  </li>
+	<li><i class="fa-li fa fa-chevron-right big-icon" aria-hidden="true"></i>
+    Collider phenomenology
+  </li>
+  </ul>
   </div>
-
-  <!-- The Publications Section -->
-  <div class="w3-light-grey" id="pubs">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">LIST OF PUBLICATIONS</h2>
-
-      <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">September</li>
-        <li class="w3-padding">October</li>
-        <li class="w3-padding">November</li>
-      </ul>
-
+  <div class="w3-col m2 w3-large w3-margin-bottom w3-left-align"></div>
+  <div class="w3-col m5 w3-large w3-margin-bottom w3-left-align">
+  <h3 class="w3-bottombar">Education</h3>
+	<ul class="fa-ul" itemscope>
+	<li><i class="fa-li fa fa-graduation-cap big-icon" aria-hidden="true"></i>
+    <span style="font-weight:bold;color:#444">Ph.D. in Physics, 2015</span><br>University of Cincinnati
+  </li>
+	<li><i class="fa-li fa fa-graduation-cap big-icon" aria-hidden="true"></i>
+    <span style="font-weight:bold;color:#444">M.Sc. in Physics, 2011</span><br>University of Cincinnati
+  </li>
+  </div>
+  </div>
+  
+  <!-- The TALKS Section -->
+<div class="w3-light-grey" id="talks">
+	<div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">LIST OF TALKS & SEMINARS</h2>
+    <!--
+    <div class="w3-container w3-gray w3-round-xlarge">
+    <h3 class="w3-wide w3-left" style="padding-left:20px;font-weight:700">2017</h3>
     </div>
+    -->
+    <div class="w3-container w3-topbar w3-white w3-border-gray">
+    <h3 class="w3-wide w3-left" style="padding-left:30px;font-weight:700;transform:scale(1.2);color:#444">2017</h3>
+    </div>
+		<table class="publist">
+    <!-- BEGIN 2017 -->
+<tr>
+<td>29.AUG.17</td>
+<td>
+<b>Double Higgs Production in VBF</b><br>QCD@LHC, Debrecen, Hungary
+</td>
+</tr>
+<tr>
+<td>28.JUL.17</td>
+<td><b>Chiral Effective Theory of Dark Matter Direct Detection</b><br>DMUK meeting, Edinburgh, Scotland
+</td>
+</tr>
+<tr>
+<td>18.JUL.17</td>
+<td><b>Charm Yukawa and New Physics</b><br>CERN, Physics at CLIC
+</td>
+</tr>
+<tr>
+<td>12.JUN.17</td>
+<td><b>Chiral Effective Theory of Dark Matter Direct Detection</b><br>GRAPPA, Amsterdam, Netherlands
+</td>
+</tr>
+<tr>
+<td>31.MAY.17</td>
+<td><b>Double Higgs Production in VBF</b><br>Blois, France. Rencontres de Blois
+</td>
+</tr>
+<tr>
+<td>19.MAY.17</td>
+<td><b>On Light Resonance Interpretations of the $B$ Decay Anomalies</b><br>CERN, Meyrin, Switzerland. Instant Workshop on $B$ Meson Anomalies
+</td>
+</tr>
+<tr>
+<td>27.APR.17</td>
+<td><b>On the recent anomalies in $R_K$ and $R_K^*$</b><br>University of Oxford, Oxford
+</td>
+</tr>
+<tr>
+<td>16.MAR.17</td>
+<td><b>The next frontier in Higgs coupling measurements</b><br>Nikhef, Amsterdam, Netherlands
+</td>
+</tr>
+<tr>
+<td>3.MAR.17</td>
+<td><b>The next frontier in Higgs coupling measurements</b><br>UCL, London
+</td>
+</tr>
+<tr>
+<td>17.JAN.17</td>
+<td><b>Double Higgs production in VBF</b><br>CERN, Meyrin, Switzerland
+</td>
+</tr>
+  <!-- END 2017 -->
+		</table>
+    <div class="w3-container w3-topbar w3-white w3-border-gray">
+    <h3 class="w3-wide w3-left" style="padding-left:30px;font-weight:700;transform:scale(1.2);color:#444">2016</h3>
+    </div>
+		<table class="publist">
+  <!-- BEGIN 2016 -->
+<tr>
+<td>19.DEC.16</td>
+<td><b>Double Higgs production in VBF</b><br>University of Oxford, Oxford. AMVA4NP workshop
+</td>
+</tr>
+<tr>
+<td>28.NOV.16</td>
+<td><b>The next frontier in Higgs coupling measurements</b><br>University of Sussex
+</td>
+</tr>
+<tr>
+<td>17.NOV.16</td>
+<td><b>The next frontier in Higgs coupling measurements</b><br>IPPP Durham
+</td>
+</tr>
+<tr>
+<td>26.OCT.16</td>
+<td><b>The next frontier in Higgs coupling measurements</b><br>NBIA, Copenhagen, Denmark. HEFT 2016 Workshop
+</td>
+</tr>
+<tr>
+<td>20.OCT.16</td>
+<td><b>Constraining the charm Yukawa using differential distributions</b><br>Phenomenology Forum, University of Oxford, Oxford
+</td>
+</tr>
+<tr>
+<td>9.AUG.16</td>
+<td><b>RG effects in Dark Matter direct detection</b><br>University of Oxford, Oxford
+</td>
+</tr>
+<tr>
+<td>13.JUN.16</td>
+<td><b>RG effects in Dark Matter direct detection</b><br>DESY, Hamburg, Germany
+</td>
+</tr>
+<tr>
+<td>6.MAY.16</td>
+<td><b>Dark matter and gauged flavor symmetries</b><br>University of Cambridge, Cambridge
+</td>
+</tr>
+<tr>
+<td>24.MAR.16</td>
+<td><b>RG effects in dark matter direct detection</b><br>Institut Jozef Stefan, Ljubljana, Slovenia
+</td>
+</tr>
+<tr>
+<td>26.FEB.16</td>
+<td><b>Dark matter and gauged flavor symmetries</b><br>CERN, Meyrin, Switzerland 
+</td>
+</tr>
+<tr>
+<td>12.JAN.16</td>
+<td><b>Photon polarization in $B\to K^*\gamma$ with conversion</b><br>TU Dortmund, Dortmund, Germany
+</td>
+</tr>
+  <!-- END 2016 -->
+    </table>
+    <div class="w3-container w3-topbar w3-white w3-border-gray">
+    <h3 class="w3-wide w3-left" style="padding-left:30px;font-weight:700;transform:scale(1.2);color:#444">2015</h3>
+    </div>
+		<table class="publist">
+  <!-- BEGIN 2015 -->
+<tr>
+<td>3.DEC.15</td>
+<td><b>Rare & Exotic Higgs Decays -- Theory Overview</b><br>CMS HiggsExotics Workshop
+</td>
+</tr>
+<tr>
+<td>29.OCT.15</td>
+<td><b>Update on $b\to s\gamma$ with converted photons</b><br>B2TiP. KEK, Tsukuba, Japan
+</td>
+</tr>
+<tr>
+<td>20.OCT.15</td>
+<td><b>Dark Matter & Continuous Flavor Symmetries</b><br>University of Liverpool. Liverpool, UK
+</td>
+</tr>
+<tr>
+<td>31.JUL.15</td>
+<td><b>Non-Standard Light- (Quark) Yukawas and the Higgs Portal</b><br>Higgs Hunting 2015. LAL -- Orsay, France
+</td>
+</tr>
+<tr>
+<td>2.JUL.15</td>
+<td><b>Flavor conscious paired dijets</b><br>LPC Physics Forum. Fermilab. Batavia, IL
+</td>
+</tr>
+<tr>
+<td>22.MAY.15</td>
+<td><b>A selection of models with modified Yukawa couplings</b><br>Higgs Exotic Decays Workshop at Fermilab. Batavia, IL
+</td>
+</tr>
+<tr>
+<td>20.MAY.15</td>
+<td><b>Dark matter and flavor symmetries or selections in dark matter model building with flavor</b><br>CIPANP 2015. Vail, CO
+</td>
+</tr>
+<tr>
+<td>9.APR.15</td>
+<td><b>Dark matter and gauged flavor symmetries</b><br>University of Illinois at Chicago. Chicago, IL
+</td>
+</tr>
+<tr>
+<td>3.FEB.15</td>
+<td><b>Dark matter and countinuous flavor symmetries</b><br>Argonne National Laboratory. Lemont, IL
+</td>
+</tr>
+<tr>
+<td>8.JAN.15</td>
+<td><b>Dark matter and countinuous flavor symmetries</b><br>TRIUMF. Vancouver BC, Canada
+</td>
+</tr>
+  <!-- END 2015 -->
+    </table>
+    <div class="w3-container w3-topbar w3-white w3-border-gray">
+    <h3 class="w3-wide w3-left" style="padding-left:30px;font-weight:700;transform:scale(1.2);color:#444">2014</h3>
+    </div>
+		<table class="publist">
+  <!-- BEGIN 2014 -->
+<tr>
+<td>18.DEC.14</td>
+<td><b>Dark matter and flavor</b><br>University of Barcelona. Barcelona, Spain
+</td>
+</tr>
+<tr>
+<td>16.DEC.14</td>
+<td><b>Dark matter and flavor</b><br>ETH Zurich. Zurich, Switzerland
+</td>
+</tr>
+<tr>
+<td>11.DEC.14</td>
+<td><b>Dark matter and flavor</b><br>LPT Orsay -- Universit&eacute; Paris Sud, Orsay, France
+</td>
+</tr>
+<tr>
+<td>9.DEC.14</td>
+<td><b>Dark matter and flavor</b><br>CEA Saclay. Gif-sur-Yvette, France
+</td>
+</tr>
+<tr>
+<td>5.DEC.14</td>
+<td><b>Dark matter and flavor</b><br>Durham University. Durham, UK
+</td>
+</tr>
+<tr>
+<td>4.DEC.14</td>
+<td><b>Dark matter and flavor</b><br>Oxford University. Oxford, UK
+</td>
+</tr>
+<tr>
+<td>2.DEC.14</td>
+<td><b>Dark matter and flavor</b><br>University of Mainz. Mainz, Germany
+</td>
+</tr>
+<tr>
+<td>30.SEP.14</td>
+<td><b>Dark matter and flavor</b><br>University of Notre Dame
+</td>
+</tr>
+<tr>
+<td>11.SEP.14</td>
+<td><b>Continuous flavor symmetries and the stability of asymmetric dark matter</b><br>Fermilab
+</td>
+</tr>
+<tr>
+<td>15.JUL.14</td>
+<td><b>Probing the Higgs-vector coupling with same-sign $W$ bosons</b><br>Cargese International School for Theoretical Particle Physics
+</td>
+</tr>
+<tr>
+<td>3.JUL.14</td>
+<td><b>Asymmetric dark matter stability from continuous flavor symmetries</b><br>LHC after the Higgs workshop
+</td>
+</tr>
+<tr>
+<td>15.MAY.14</td>
+<td><b>Probing CP violation in $h\rightarrow\gamma\gamma$ with converted photons</b><br>Americas Workshop on Linear Colliders (AWLC14)
+</td>
+</tr>
+<tr>
+<td>5.MAY.14</td>
+<td><b>Probing the Higgs-vector coupling with same-sign $W$ bosons</b><br>PHENO14
+</td>
+</tr>
+<tr>
+<td>7.APR.14</td>
+<td><b>Probing CP violation in $h\rightarrow\gamma\gamma$ with converted photons</b><br>APS April meeting
+</td>
+</tr>
+  <!-- END 2014 -->
+  </table>
+	</div>
+</div>
+
+  <!-- The Activities Section -->
+	<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="activities">
+    <h2 class="w3-wide w3-center">ACTIVITIES</h2>
+    <div class="w3-container w3-topbar w3-light-gray w3-border-gray">
+    <h3>Organized events</h3>
+    </div>
+	<ul class="fa-ul" itemscope>
+	<li><i class="fa-li fa fa-chevron-right fa-1x" aria-hidden="true"></i>
+    Dalitz seminar in fundamental physics
+  </li>
+  </ul>
+  <br>
+    <div class="w3-container w3-topbar w3-light-gray w3-border-gray">
+    <h3>Workshops & conferences</h3>
+    </div>
+  <!--
+	<ul class="fa-ul" itemscope>
+	<li><i class="fa-li fa fa-chevron-right fa-1x" aria-hidden="true"></i>
+    Dalitz seminar in fundamental physics
+  </li>
+  </ul>
+  -->
+		<table class="activ">
+    <!-- BEGIN ACTIVITIES -->
+<tr>
+  <td>28.JUL<span style="color:gray">.17</span></td>
+  <td><b>DMUK: meeting of the UK Dark Matter community</b><br>Edinburgh, Scotland
+  </td>
+</tr>
+<tr>
+  <td>28.MAY<span style="color:gray">.17</span><br>02.JUN<span style="color:gray">.17</span></td>
+  <td><b>Rencontres de Blois</b><br>Blois, France
+  </td>
+</tr>
+<tr>
+  <td>17.MAY<span style="color:gray">.17</span><br>19.MAY<span style="color:gray">.17</span></td>
+  <td><b>Instant Workshop on $B$ Meson Anomalies</b><br>CERN, Meyrin, Switzerland
+  </td>
+</tr>
+<tr>
+  <td>10.APR<span style="color:gray">.17</span><br>14.APR<span style="color:gray">.17</span></td>
+  <td><b>Visitor at the Theory department</b><br>CERN, Meyrin, Switzerland
+  </td>
+</tr>
+<tr>
+  <td>16.JAN<span style="color:gray">.17</span><br>20.JAN<span style="color:gray">.17</span></td>
+  <td><b>1<sup>st</sup> FCC Physics Workshop</b><br>CERN, Meyrin, Switzerland
+  </td>
+</tr>
+<tr>
+  <td>19.DEC<span style="color:gray">.16</span><br>21.DEC<span style="color:gray">.16</span></td>
+  <td><b>Annual Theory Meeting & STFC Town Meeting</b><br>IPPP, Durham
+  </td>
+</tr>
+<tr>
+  <td>03.NOV<span style="color:gray">.16</span><br>04.NOV<span style="color:gray">.16</span></td>
+  <td><b>UK HEP Forum: `Into the Unknown with LHC13'</b><br>Abingdon
+  </td>
+</tr>
+<tr>
+  <td>26.OCT<span style="color:gray">.16</span><br>28.OCT<span style="color:gray">.16</span></td>
+  <td><b>Higgs Effective Field Theories (HEFT) Workshop</b><br>NBIA, Copenhagen, Denmark
+  </td>
+</tr>
+<tr>
+  <td>31.AUG<span style="color:gray">.16</span><br>02.AUG<span style="color:gray">.16</span></td>
+  <td><b>SEARCH Workshop</b><br>St Catherine's College, Oxford
+  </td>
+</tr>
+<tr>
+  <td>09.AUG<span style="color:gray">.16</span></td>
+  <td><b>Dark Matter interpretations for Direct Detection Workshop</b><br>Lincoln College, Oxford
+  </td>
+</tr>
+<tr>
+  <td>15.FEB<span style="color:gray">.16</span><br>04.FEB<span style="color:gray">.16</span></td>
+  <td><b>Visitor at the Theory department</b><br>CERN, Meyrin, Switzerland
+  </td>
+</tr>
+<tr>
+  <td>20.DEC<span style="color:gray">.15</span><br>22.DEC<span style="color:gray">.15</span></td>
+  <td><b>Annual Theory Meeting & STFC Town Meeting</b><br>University of Durham, Durham, UK
+  </td>
+</tr>
+<tr>
+  <td>05.NOV<span style="color:gray">.15</span><br>06.NOV<span style="color:gray">.15</span></td>
+  <td><b>UK HEP Forum -- anomalies and deviations</b><br>Cosener's house, Abingdon, UK
+  </td>
+</tr>
+<tr>
+  <td>26.OCT<span style="color:gray">.15</span><br>29.OCT<span style="color:gray">.15</span></td>
+  <td><b>KEK-FF & B2TiP conference</b><br>Tokyo/Tsukuba, Japan
+  </td>
+</tr>
+<tr>
+  <td>21.SEP<span style="color:gray">.15</span><br>02.OCT<span style="color:gray">.15</span></td>
+  <td><b>Gearing up for LHC13</b><br>GGI, Florence, Italy
+  </td>
+</tr>
+<tr>
+  <td>30.JUL<span style="color:gray">.15</span><br>01.AUG<span style="color:gray">.15</span></td>
+  <td><b>Higgs Hunting 2015</b><br>Orsay, France
+  </td>
+</tr>
+<tr>
+  <td>14.JUL<span style="color:gray">.14</span><br>26.JUL<span style="color:gray">.14</span></td>
+  <td><b>Cargese International School for Theoretical Particle Physics</b><br>Corsica, France
+  </td>
+</tr>
+<tr>
+  <td>30.JUN<span style="color:gray">.14</span><br>04.JUN<span style="color:gray">.14</span></td>
+  <td><b>LHC after the Higgs workshop</b><br>Santa Fe, NM
+  </td>
+</tr>
+<tr>
+  <td>05.MAY<span style="color:gray">.14</span><br>07.MAY<span style="color:gray">.14</span></td>
+  <td><b>PHENO14 conference</b><br>Pittsburgh, PA
+  </td>
+</tr>
+<tr>
+  <td>05.APR<span style="color:gray">.14</span><br>08.APR<span style="color:gray">.14</span></td>
+  <td><b>APS April meeting</b><br>Savannah, GA
+  </td>
+</tr>
+<tr>
+  <td>22.NOV<span style="color:gray">.13</span></td>
+  <td><b>Dark Matter Hub Meeting</b><br>Chicago, IL
+  </td>
+</tr>
+<tr>
+  <td>19.SEP<span style="color:gray">.13</span><br>21.SEP<span style="color:gray">.13</span></td>
+  <td><b>Dark Matter at the LHC workshop</b><br>University of Chicago, Chicago, IL
+  </td>
+</tr>
+<tr>
+  <td>03.JUN<span style="color:gray">.13</span><br>28.JUN<span style="color:gray">.13</span></td>
+  <td><b>Theoretical Advanced Study Institute (TASI) in elementary particle physics</b><br>Boulder, CO
+  </td>
+</tr>
+<tr>
+  <td>28.SEP<span style="color:gray">.12</span><br>2.SEP<span style="color:gray">.12</span></td>
+  <td><b>7<sup>th</sup> International Workshop on the CKM Unitarity Triangle</b><br>Cincinnati, OH
+  </td>
+</tr>
+<tr>
+  <td>23.JUL<span style="color:gray">.12</span><br>3.JUL<span style="color:gray">.12</span></td>
+  <td><b>The Electroweak Scale: Unraveling the Mysteries at the LHC</b><br>SLAC Summer Institute, Menlo Park, CA
+  </td>
+</tr>
+<tr>
+  <td>24.AUG<span style="color:gray">.11</span><br>26.AUG<span style="color:gray">.11</span></td>
+  <td><b>University of Chicago, Chicago, IL</b><br>PreSUSY 2011 Summer School
+  </td>
+</tr>
+<tr>
+  <td>18.JUL<span style="color:gray">.11</span><br>29.JUL<span style="color:gray">.11</span></td>
+  <td><b>Attended the Dark Matter in the Heavens and Underground workshop at CERN</b><br>Meyrin, Switzerland
+  </td>
+</tr>
+<tr>
+  <td>20.JUN<span style="color:gray">.11</span><br>31.JUN<span style="color:gray">.11</span></td>
+  <td><b>Visiting student at CERN</b><br>Meyrin, Switzerland
+  </td>
+</tr>
+<tr>
+  <td>06.JUN<span style="color:gray">.11</span><br>17.JUN<span style="color:gray">.11</span></td>
+  <td><b>ICTP Summer School on Particle Physics</b><br>Trieste, Italy
+  </td>
+</tr>
+    <!-- END ACTIVITIES -->
+    </table>
   </div>
 
-  <!-- Ticket Modal -->
-  <div id="ticketModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
-       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-      </header>
-      <div class="w3-container">
-        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="How many?">
-        <p><label><i class="fa fa-user"></i> Send To</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="Enter email">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
-      </div>
-    </div>
-  </div>
-<i class="material-icons">email</i>
+
+
   <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+<div class="w3-light-grey" id="contact">
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
     <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
     <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="material-icons">email</i> Email: mail@mail.com<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
+	<div itemscope itemtype="http://schema.org/Person">
+      <div class="w3-col m2 w3-large w3-margin-bottom"></div>
+      <div class="w3-col m8 w3-large w3-margin-bottom">
+			<ul class="fa-ul" itemscope>
+			<li><i class="fa-li fa fa-map-marker fa-2x" aria-hidden="true"></i>
+			<span id="person-address" itemprop="address">Dalitz 1, Denys Wilkinson Building, Keble Road, Oxford, OX1 3RH</span>
+      <li><i class="fa-li fa fa-envelope fa-2x" aria-hidden="true"></i>
+      <span id="person-email" itemprop="email"><a href="mailto:fady.bishara@physics.ox.ac.uk">fady.bishara@physics.ox.ac.uk</a></span>
+      </li>
+      <li> 
+        <i class="fa-li fa fa-skype fa-2x" aria-hidden="true"></i>
+        <span><a href="skype:fadybishara?call">fadybishara</a></span>
+      </li>
+			<li><i class="fa-li fa fa-phone fa-2x" aria-hidden="true"></i>
+			<span id="person-telephone" itemprop="telephone">+44 01865 273605 </span></li>
+			</ul>
       </div>
     </div>
   </div>
+	</div>
+</div>
   
 <!-- End Page Content -->
 </div>
 <!-- Add Google Maps -->
-<div id="googleMap" style="height:400px;" class="w3-grayscale-max"></div>
-<script>
-function myMap() {
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+<!---
   <i class="fa fa-facebook-official w3-hover-opacity"></i>
   <i class="fa fa-instagram w3-hover-opacity"></i>
   <i class="fa fa-snapchat w3-hover-opacity"></i>
   <i class="fa fa-pinterest-p w3-hover-opacity"></i>
   <i class="fa fa-twitter w3-hover-opacity"></i>
   <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+-->
+  <p class="w3-large">
+  &copy; 2017 Fady Bishara &middot;
+  Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
-
 <script>
+w3.includeHTML();
+</script>
+<script type="text/javascript">
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
 carousel();
@@ -200,6 +677,329 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+// Search settings
+var searchAbstract = true;	// search in abstract
+var searchReview = true;	// search in review
+
+var noSquiggles = true; 	// ignore diacritics when searching
+var searchRegExp = false; 	// enable RegExp searches
+
+
+if (window.addEventListener) {
+	window.addEventListener("load",initSearch,false); }
+else if (window.attachEvent) {
+	window.attachEvent("onload", initSearch); }
+
+function initSearch() {
+	// check for quick search table and searchfield
+	if (!document.getElementById('qs_table')||!document.getElementById('quicksearch')) { return; }
+
+	// load all the rows and sort into arrays
+	loadTableData();
+	
+	//find the query field
+	qsfield = document.getElementById('qs_field');
+
+	// previous search term; used for speed optimisation
+	prevSearch = '';
+
+	//find statistics location
+	stats = document.getElementById('stat');
+	setStatistics(-1);
+	
+	// set up preferences
+	initPreferences();
+
+	// shows the searchfield
+	document.getElementById('quicksearch').style.display = 'block';
+	document.getElementById('qs_field').onkeyup = quickSearch;
+}
+
+function loadTableData() {
+	// find table and appropriate rows
+	searchTable = document.getElementById('qs_table');
+	var allRows = searchTable.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+
+	// split all rows into entryRows and infoRows (e.g. abstract, review, bibtex)
+	entryRows = new Array(); infoRows = new Array(); absRows = new Array(); revRows = new Array();
+
+	// get data from each row
+	entryRowsData = new Array(); absRowsData = new Array(); revRowsData = new Array(); 
+	
+	BibTeXKeys = new Array();
+	
+	for (var i=0, k=0, j=0; i<allRows.length;i++) {
+		if (allRows[i].className.match(/entry/)) {
+			entryRows[j] = allRows[i];
+			entryRowsData[j] = stripDiacritics(getTextContent(allRows[i]));
+			allRows[i].id ? BibTeXKeys[j] = allRows[i].id : allRows[i].id = 'autokey_'+j;
+			j ++;
+		} else {
+			infoRows[k++] = allRows[i];
+			// check for abstract/review
+			if (allRows[i].className.match(/abstract/)) {
+				absRows.push(allRows[i]);
+				absRowsData[j-1] = stripDiacritics(getTextContent(allRows[i]));
+			} else if (allRows[i].className.match(/review/)) {
+				revRows.push(allRows[i]);
+				revRowsData[j-1] = stripDiacritics(getTextContent(allRows[i]));
+			}
+		}
+	}
+	//number of entries and rows
+	numEntries = entryRows.length;
+	numInfo = infoRows.length;
+	numAbs = absRows.length;
+	numRev = revRows.length;
+}
+
+function quickSearch(){
+	
+	tInput = qsfield;
+
+	if (tInput.value.length == 0) {
+		showAll();
+		setStatistics(-1);
+		qsfield.className = '';
+		return;
+	} else {
+		t = stripDiacritics(tInput.value);
+
+		if(!searchRegExp) { t = escapeRegExp(t); }
+			
+		// only search for valid RegExp
+		try {
+			textRegExp = new RegExp(t,"i");
+			closeAllInfo();
+			qsfield.className = '';
+		}
+			catch(err) {
+			prevSearch = tInput.value;
+			qsfield.className = 'invalidsearch';
+			return;
+		}
+	}
+	
+	// count number of hits
+	var hits = 0;
+
+	// start looping through all entry rows
+	for (var i = 0; cRow = entryRows[i]; i++){
+
+		// only show search the cells if it isn't already hidden OR if the search term is getting shorter, then search all
+		if(cRow.className.indexOf('noshow')==-1 || tInput.value.length <= prevSearch.length){
+			var found = false; 
+
+			if (entryRowsData[i].search(textRegExp) != -1 || BibTeXKeys[i].search(textRegExp) != -1){ 
+				found = true;
+			} else {
+				if(searchAbstract && absRowsData[i]!=undefined) {
+					if (absRowsData[i].search(textRegExp) != -1){ found=true; } 
+				}
+				if(searchReview && revRowsData[i]!=undefined) {
+					if (revRowsData[i].search(textRegExp) != -1){ found=true; } 
+				}
+			}
+			
+			if (found){
+				cRow.className = 'entry show';
+				hits++;
+			} else {
+				cRow.className = 'entry noshow';
+			}
+		}
+	}
+
+	// update statistics
+	setStatistics(hits)
+	
+	// set previous search value
+	prevSearch = tInput.value;
+}
+
+
+// Strip Diacritics from text
+// http://stackoverflow.com/questions/990904/javascript-remove-accents-in-strings
+
+// String containing replacement characters for stripping accents 
+var stripstring = 
+    'AAAAAAACEEEEIIII'+
+    'DNOOOOO.OUUUUY..'+
+    'aaaaaaaceeeeiiii'+
+    'dnooooo.ouuuuy.y'+
+    'AaAaAaCcCcCcCcDd'+
+    'DdEeEeEeEeEeGgGg'+
+    'GgGgHhHhIiIiIiIi'+
+    'IiIiJjKkkLlLlLlL'+
+    'lJlNnNnNnnNnOoOo'+
+    'OoOoRrRrRrSsSsSs'+
+    'SsTtTtTtUuUuUuUu'+
+    'UuUuWwYyYZzZzZz.';
+
+function stripDiacritics(str){
+
+    if(noSquiggles==false){
+        return str;
+    }
+
+    var answer='';
+    for(var i=0;i<str.length;i++){
+        var ch=str[i];
+        var chindex=ch.charCodeAt(0)-192;   // Index of character code in the strip string
+        if(chindex>=0 && chindex<stripstring.length){
+            // Character is within our table, so we can strip the accent...
+            var outch=stripstring.charAt(chindex);
+            // ...unless it was shown as a '.'
+            if(outch!='.')ch=outch;
+        }
+        answer+=ch;
+    }
+    return answer;
+}
+
+// http://stackoverflow.com/questions/3446170/escape-string-for-use-in-javascript-regex
+// NOTE: must escape every \ in the export code because of the JabRef Export...
+function escapeRegExp(str) {
+  return str.replace(/[-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+}
+
+function toggleInfo(articleid,info) {
+
+	var entry = document.getElementById(articleid);
+	var abs = document.getElementById('abs_'+articleid);
+	var rev = document.getElementById('rev_'+articleid);
+	var bib = document.getElementById('bib_'+articleid);
+	
+	if (abs && info == 'abstract') {
+		abs.className.indexOf('noshow') == -1?abs.className = 'abstract noshow':abs.className = 'abstract show';
+	} else if (rev && info == 'review') {
+		rev.className.indexOf('noshow') == -1?rev.className = 'review noshow':rev.className = 'review show';
+	} else if (bib && info == 'bibtex') {
+		bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex show';
+	} else { 
+		return;
+	}
+
+	// check if one or the other is available
+	var revshow; var absshow; var bibshow;
+	(abs && abs.className.indexOf('noshow') == -1)? absshow = true: absshow = false;
+	(rev && rev.className.indexOf('noshow') == -1)? revshow = true: revshow = false;	
+	(bib && bib.className.indexOf('noshow') == -1)? bibshow = true: bibshow = false;
+	
+	// highlight original entry
+	if(entry) {
+		if (revshow || absshow || bibshow) {
+		entry.className = 'entry highlight show';
+		} else {
+		entry.className = 'entry show';
+		}
+	}
+	
+	// When there's a combination of abstract/review/bibtex showing, need to add class for correct styling
+	if(absshow) {
+		(revshow||bibshow)?abs.className = 'abstract nextshow':abs.className = 'abstract';
+	} 
+	if (revshow) {
+		bibshow?rev.className = 'review nextshow': rev.className = 'review';
+	}	
+	
+}
+
+function setStatistics (hits) {
+	if(hits < 0) { hits=numEntries; }
+	if(stats) { stats.firstChild.data = hits + '/' + numEntries}
+}
+
+function getTextContent(node) {
+	// Function written by Arve Bersvendsen
+	// http://www.virtuelvis.com
+	
+	if (node.nodeType == 3) {
+	return node.nodeValue;
+	} // text node
+	if (node.nodeType == 1 && node.className != "infolinks") { // element node
+	var text = [];
+	for (var chld = node.firstChild;chld;chld=chld.nextSibling) {
+		text.push(getTextContent(chld));
+	}
+	return text.join("");
+	} return ""; // some other node, won't contain text nodes.
+}
+
+function showAll(){
+	closeAllInfo();
+	for (var i = 0; i < numEntries; i++){ entryRows[i].className = 'entry show'; }
+}
+
+function closeAllInfo(){
+	for (var i=0; i < numInfo; i++){
+		if (infoRows[i].className.indexOf('noshow') ==-1) {
+			infoRows[i].className = infoRows[i].className + ' noshow';
+		}
+	}
+}
+
+function clearQS() {
+	qsfield.value = '';
+	showAll();
+}
+
+function redoQS(){
+	showAll();
+	quickSearch(qsfield);
+}
+
+function updateSetting(obj){
+	var option = obj.id;
+	var checked = obj.value;
+
+	switch(option)
+	 {
+	 case "opt_searchAbs":
+	   searchAbstract=!searchAbstract;
+	   redoQS();
+	   break;
+	 case "opt_searchRev":
+	   searchReview=!searchReview;
+	   redoQS();
+	   break;
+	 case "opt_useRegExp":
+	   searchRegExp=!searchRegExp;
+	   redoQS();
+	   break;
+	 case "opt_noAccents":
+	   noSquiggles=!noSquiggles;
+	   loadTableData();
+	   redoQS();
+	   break;
+	 }
+}
+
+function initPreferences(){
+	if(searchAbstract){document.getElementById("opt_searchAbs").checked = true;}
+	if(searchReview){document.getElementById("opt_searchRev").checked = true;}
+	if(noSquiggles){document.getElementById("opt_noAccents").checked = true;}
+	if(searchRegExp){document.getElementById("opt_useRegExp").checked = true;}
+	
+	if(numAbs==0) {document.getElementById("opt_searchAbs").parentNode.style.display = 'none';}
+	if(numRev==0) {document.getElementById("opt_searchRev").parentNode.style.display = 'none';}	
+}
+
+function toggleSettings(){
+	var togglebutton = document.getElementById('showsettings');
+	var settings = document.getElementById('settings');
+	
+	if(settings.className == "hidden"){
+		settings.className = "show";
+		togglebutton.innerText = "close settings";
+		togglebutton.textContent = "close settings";
+	}else{
+		settings.className = "hidden";
+		togglebutton.innerText = "settings...";		
+		togglebutton.textContent = "settings...";
+	}
+}
+
 </script>
 
 </body>

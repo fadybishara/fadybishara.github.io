@@ -1,0 +1,13 @@
+/* navbar */
+.navbar-default{
+	font-family:	"Lato", sans-serif; 
+	font-size: 		12pt
+}
+
+.text{
+	font-family	:	"Raleway";
+	font-size	:	1.25em;
+	font-weight	:	bold;
+	color		:	#666666;
+	line-height	:	1.65;
+}

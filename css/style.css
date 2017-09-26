@@ -1,0 +1,231 @@
+/*
+html {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.8);
+  line-height: 1.65;
+}
+*/
+body {
+  font-family: inherit;
+  font-size: 16pt;
+  line-height: inherit;
+  color: inherit;
+  margin-top: 71px; /* Offset body content by navbar height. */
+  padding-top: 0;
+  counter-reset: captions;
+}
+
+#cv a:hover, a:active{
+  /*background-color: #005181;*/
+  background-color: gray;
+	color: white;
+}
+#cv a:link {
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+#cv a:visited {
+    text-decoration: none;
+}
+
+
+.date {
+  position: relative;
+  width: 70px;
+  font-family: Georgia, serif;
+  color: #999;
+  margin: 0 auto;
+ }
+ 
+.day, .month{
+  position: absolute;
+  }
+ 
+.day { 
+  font-size: 30px;
+  top: 15px;
+  }
+ 
+.month { 
+  top: 0;
+  left: 0;  
+  font-size: 18px;
+  }
+
+p.publist {
+	font-size: 16pt;
+}
+ol.publist {
+    list-style-type: none;
+    list-style-type: decimal !ie; /*IE 7- hack*/
+     
+    margin: 0;
+    margin-left: 3em;
+    padding: 0;
+     
+    counter-reset: li-counter;
+}
+ol.publist > li{
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 0.5em;
+    min-height: 3em;
+    border-left: 2px solid #CCCCCC;
+}
+ol.publist > li:before {
+    position: absolute;
+    top: 0;
+    left: -1em;
+    width: 0.8em;
+     
+    font-size: 3em;
+    line-height: 1;
+    font-weight: bold;
+    text-align: right;
+    color: #464646;
+ 
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
+
+table.publist{
+  width: 100%;
+  border-collapse: all;
+  border-spacing: 25px;
+}
+
+table.publist td:nth-child(1){
+  font-family: 'Lato';
+  font-weight: bold; 
+  color: #333;
+  width: 15%;
+  transform: scale(1.2); 
+  vertical-align: top;
+  text-align: right;
+  padding-right: 20px;
+}
+table.publist td:nth-child(2){
+  border-left: thick solid red;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+table.publist tr{
+  border-top: -5px;
+  border-bottom: -5px;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #aaa;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+#contact a {
+  color: #0095eb;
+  text-decoration: none;
+  transition: color 0.6s ease;
+}
+
+#contact a:hover,
+a:focus {
+  color: #005181;
+}
+
+#contact {
+  font-family: 'Lato', serif;
+}
+
+#contact .fa-ul{
+  margin-left: 3.15rem;
+}
+
+#contact .fa-li{
+  position: absolute;
+  left: -3.15;
+  top: 0.15;
+  text-align:center;
+}
+
+#contact li{
+  padding-top: 0.8rem;
+  margin-bottom: 0.3rem;
+  margin-right: 10px;
+  color:#666666;
+}
+
+#contact li:last-of-type{
+  margin-bottom: 0;
+}
+
+#profile {
+  text-align: left;
+  padding: 30px 10px;
+  position: relative;
+}
+
+
+#profile ul.social-icon {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+#profile .social-icon li {
+  margin-right: 10px;
+  font-size: 32px;
+  color:#666666;
+}
+
+#profile .social-icon li:last-of-type {
+  margin-right: 0;
+}
+
+#profile .social-icon li:hover {
+  transform: scale(1.2)
+}
+
+table.activ{
+  width: 100%;
+  border-collapse: all;
+  border-spacing: 25px;
+}
+
+table.activ td:nth-child(1){
+  font-family: 'Lato';
+  font-weight: bold; 
+  color: #333;
+  width: 25%;
+  transform: scale(1.1); 
+  vertical-align: top;
+  text-align: right;
+  padding-right: 20px;
+}
+table.activ td:nth-child(2){
+  border-left: thick solid red;
+  /*padding-top: 2px;*/
+  padding-bottom: 2px;
+  vertical-align: top;
+}
+table.activ tr{
+  border-top: -5px;
+  border-bottom: -5px;
+}
+
