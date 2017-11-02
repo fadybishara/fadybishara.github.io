@@ -77,11 +77,11 @@ table.publist td:nth-child(1){
   font-family: 'Lato';
   font-weight: bold; 
   color: #333;
-  width: 15%;
-  transform: scale(1.2); 
+  width: 20%;
+  transform: scale(1.1); 
   vertical-align: top;
   text-align: right;
-  padding-right: 20px;
+  padding-right: 10px;
 }
 table.publist td:nth-child(2){
   border-left: thick solid red;
@@ -184,30 +184,3 @@ a:focus {
 	background-color: white;
   transform: scale(1.2);
 }
-
-table.activ{
-  width: 100%;
-  border-collapse: all;
-  border-spacing: 25px;
-}
-
-table.activ td:nth-child(1){
-  font-family: 'Lato';
-  font-weight: bold; 
-  color: #333;
-  width: 25%;
-  transform: scale(1.1); 
-  vertical-align: top;
-  text-align: right;
-  padding-right: 20px;
-}
-table.activ td:nth-child(2){
-  border-left: thick solid red;
-  padding-bottom: 2px;
-  vertical-align: top;
-}
-table.activ tr{
-  border-top: -5px;
-  border-bottom: -5px;
-}
-
