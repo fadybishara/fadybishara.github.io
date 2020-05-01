@@ -84,7 +84,7 @@ table.publist td:nth-child(1){
   padding-right: 10px;
 }
 table.publist td:nth-child(2){
-  border-left: thick solid red;
+  border-left: thick solid #00A6EB;
   padding-top: 2px;
   padding-bottom: 2px;
 }
@@ -120,7 +120,8 @@ blockquote p {
 
 #contact a:hover,
 a:focus {
-  color: #0095eb;
+  /*color: #0095eb;*/
+  color: #F28E00;
   /*color: #005181;*/
 }
 
@@ -229,3 +230,9 @@ a:focus {
   overflow: hidden;
   background-color: #f1f1f1;
 } 
+
+#talks a:link, a:visited, a:hover, a:active{
+  color: #666;
+}
+
+#talks a:hover { color: #F28E00; }
