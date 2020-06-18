@@ -130,7 +130,7 @@ a:focus {
 }
 
 #contact .fa-ul{
-  margin-left: 3.15rem;
+  margin-left: 3.15rem;  
 }
 
 #contact .fa-li{
@@ -141,6 +141,7 @@ a:focus {
 }
 
 #contact li{
+  height: 33px;
   padding-top: 0.8rem;
   margin-bottom: 0.3rem;
   margin-right: 10px;
@@ -203,10 +204,10 @@ a:focus {
 }
 
 .collapsible:after {
-  content: "\f078";
-  font-family: FontAwesome;
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 900;
   /*text-decoration: inherit;*/
 	font-size: 23px;
 	color: gray;
@@ -217,10 +218,10 @@ a:focus {
 }
 
 .active:after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
+  content: "\f106";
+  font-family: "Font Awesome 5 Free";
+  /*font-style: normal;*/
+  font-weight: 900;
   text-decoration: inherit;
 }
 
