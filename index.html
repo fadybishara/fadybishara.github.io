@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Mono&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 <!--<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/fontawesome.min.css">
@@ -33,8 +34,9 @@
 <link rel="stylesheet" href="css/navbar.css">
 <link rel="stylesheet" href="css/style.css">
 <style>
-body {font-family: "Raleway", sans-serif; font-size: 14pt}
-h1 {font-family: "Raleway", sans-serif;font-weight: bolder; color: #555555 }
+body {font-family: "Roboto", sans-serif; font-size: 14pt; font-weight:300}
+h1 {font-family: "Lato", sans-serif;font-weight: 700; color: #555555 }
+h2 {font-family: "Roboto Condensed", sans-serif; color: #444}
 .mySlides {display: none}
 </style>
 <script type="text/javascript" async
@@ -57,7 +59,9 @@ MathJax.Hub.Config({
     <a href="#cv" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CV</a>
     <a href="#talks" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TALKS</a>
     <a href="#activities" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ACTIVITIES</a>
-    <!--<a href="#teaching" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEACHING</a>-->
+    <a href="#software" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SOFTWARE</a>
+<!-- <a href="#code" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><i class="fas fa-code-branch fa-lg"></i></a>
+    <a href="#teaching" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEACHING</a>-->
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
    <!-- 
     <div class="w3-dropdown-hover w3-hide-small">
@@ -68,16 +72,17 @@ MathJax.Hub.Config({
         <a href="#software" class="w3-bar-item w3-button">SOFTWARE</a>
       </div>
     </div>
-  --> 
     <a href="javascript:void(0)" class="w3-padding-large w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  --> 
   </nav>
 </div>
 
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#cv" class="w3-bar-item w3-button w3-padding-large">CV</a>
+  <!-- <a href="#cv" class="w3-bar-item w3-button w3-padding-large">CV</a> -->
   <a href="#talks" class="w3-bar-item w3-button w3-padding-large">TALKS</a>
   <a href="#activities" class="w3-bar-item w3-button w3-padding-large">ACTIVITIES</a>
+  <a href="#software" class="w3-bar-item w3-button w3-padding-large">SOFTWARE</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
 </div>
 
@@ -95,7 +100,7 @@ MathJax.Hub.Config({
     	<div class="navbar text">Junior Staff</br>DESY Theory Group</div>
       <ul class="social-icon" aria-hidden="true">
         <li>
-          <a itemprop="sameAs" href="mailto:fady.bishara@physics.ox.ac.uk" target="_blank">
+          <a itemprop="sameAs" href="mailto:fady.bishara@desy.de" target="_blank">
             <i class="fa fa-envelope big-icon"></i>
           </a>
         </li>
@@ -120,7 +125,6 @@ MathJax.Hub.Config({
   </div>
 	</div>
 
-  <!-- The Band Section -->
   <div class="w3-container w3-content w3-center w3-padding-48" style="max-width:800px" id="cv">
     <h2 class="w3-wide">CURRICULUM VITAE</h2>
     <!--<p class="w3-opacity"><i>We love music</i></p>-->
@@ -166,8 +170,10 @@ MathJax.Hub.Config({
   </li>
   </div>
   </div>
-  
-  <!-- The TALKS Section -->
+
+<!-- ############################################################# -->
+<!--  The TALKS Section -->
+<!-- ############################################################# -->
 <div class="w3-light-grey" id="talks">
 	<div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <h2 class="w3-wide w3-center">LIST OF TALKS & SEMINARS</h2>
@@ -188,13 +194,44 @@ MathJax.Hub.Config({
 </div>
 -->
 <button class="collapsible">
-<h3 class="w3-wide w3-left" style="padding-left:30px;font-weight:700;transform:scale(1.2);color:#444">2020</h3>
+<h3 class="w3-wide w3-left" style="padding-left:30px;font-family:'Roboto',sans-serif;font-weight:700;transform:scale(1.2);color:#444">2020</h3>
 </button>
 <div class="content" style="display:block">
 <table class="publist">
 <!-------------------------------------------------------------------->
 <!-- BEGIN 2020 -->
 <!-------------------------------------------------------------------->
+<tr><td>13-NOV-20</td>
+<td><b>New precision Vh channels at the FCChh: leptons + photons</b>
+<a itemprop="sameAs" href="https://indico.cern.ch/event/932973/timetable/#55-a-new-precision-process-at" target="_blank"><i class="fas fa-link fa-1x" aria-hidden="true"></i></a>
+<br>FCC Physics Workshop, [online]</td>
+<td>
+	<a itemprop="sameAs" href="https://indico.cern.ch/event/932973/contributions/4056251/attachments/2142688/3610851/bishara_fcc_2020.11.13.pdf" target="_blank">
+		<i class="far fa-file-pdf fa-2x" aria-hidden="true"></i>
+	</a>
+</td>
+</tr>
+<!-------------------------------------------------------------------->
+<tr><td>02-NOV-20</td>
+<td><b>DirectDM: a tool for DM direct detection and unified searches</b>
+<a itemprop="sameAs" href="https://indico.cern.ch/event/955391/contributions/4075409/" target="_blank"><i class="fas fa-link fa-1x" aria-hidden="true"></i></a>
+<br>Tools 2020, [online]
+</td>
+<td>
+	<a itemprop="sameAs" href="https://indico.cern.ch/event/955391/contributions/4075409/attachments/2134407/3594959/bishara_tools20.pdf" target="_blank">
+		<i class="far fa-file-pdf fa-2x" aria-hidden="true"></i>
+	</a>
+</td>
+</tr>
+<tr><td>09-JUL-20</td>
+<td><b>Dark Matter EFT for unified searches</b>
+<br>ATLAS common DM working group meeting, [online]</td>
+<td>
+	<a itemprop="sameAs" href="https://desycloud.desy.de/index.php/s/xi4Qp8DmMFB3swM" target="_blank">
+		<i class="far fa-file-pdf fa-2x" aria-hidden="true"></i>
+	</a>
+</td>
+</tr>
 <tr><td>08-JUN-20</td>
     <td><b>The Tower of EFTs for Unified Dark Matter Searches</b>
     <br>Universit&auml;t Siegen, [online]
@@ -202,7 +239,9 @@ MathJax.Hub.Config({
 </tr>
 <!-------------------------------------------------------------------->
 <tr><td>28-MAY-20<br></td>
-<td><b>(Machine) Learning Amplitudes for Faster Event Generation   <a itemprop="sameAs" href="https://indico.cern.ch/event/908074/" target="_blank"><i class="fas fa-link fa-1x" aria-hidden="true"></i></a>  <span style="color:#F28E00">[new results]</span></b>
+<td><b>(Machine) Learning Amplitudes for Faster Event Generation   <a itemprop="sameAs" href="https://indico.cern.ch/event/908074/" target="_blank"><i class="fas fa-link fa-1x" aria-hidden="true"></i></a>  
+<!--<span style="color:#F28E00">[new results]</span>-->
+</b>
 <br>Cavendish-DAMTP joint seminar, University of Cambridge</td>
 <td>
 	<a itemprop="sameAs" href="https://indico.cern.ch/event/908074/contributions/3820541/attachments/2046994/3429936/bishara_cambridge.pdf" target="_blank">
@@ -212,10 +251,15 @@ MathJax.Hub.Config({
 </tr>
 <!-------------------------------------------------------------------->
 <tr><td>26-MAY-20</td>
-    <td><b>Dark Matter Overview</b>
+    <td><b>Theory Overview: Dark Matter</b>
     <a itemprop="sameAs" href="https://indi.to/dVYkj" target="_blank"><i class="fas fa-link fa-1x" aria-hidden="true"></i></a>
     <br>LHCP 2020, [online]
   </td>
+<td>
+	<a itemprop="sameAs" href="https://indico.cern.ch/event/856696/contributions/3742219/attachments/2044929/3425758/bishara_lhcp_dm.pdf" target="_blank">
+		<i class="far fa-file-pdf fa-2x" aria-hidden="true"></i>
+	</a>
+</td>
 </tr>
 <tr><td>13-MAY-20</td>
     <td><b>The Tower of EFTs for Unified Dark Matter Searches</b>
@@ -238,7 +282,7 @@ MathJax.Hub.Config({
 <!-- END   2020 -->
 <!-------------------------------------------------------------------->
 <button class="collapsible">
-<h3 class="w3-wide w3-left" style="padding-left:30px;font-weight:700;transform:scale(1.2);color:#444">2019</h3>
+<h3 class="w3-wide w3-left" style="padding-left:30px;font-family:'Roboto',sans-serif;font-weight:700;transform:scale(1.2);color:#444;">2019</h3>
 </button>
 <!-------------------------------------------------------------------->
 <!-- BEGIN 2019 -->
@@ -300,7 +344,7 @@ MathJax.Hub.Config({
 <!-- END   2019 -->
 <!-------------------------------------------------------------------->
 <button class="collapsible">
-<h3 class="w3-wide w3-left" style="padding-left:30px;font-weight:700;transform:scale(1.2);color:#444">2018</h3>
+<h3 class="w3-wide w3-left" style="padding-left:30px;font-family:'Roboto',sans-serif;font-weight:700;transform:scale(1.2);color:#444">2018</h3>
 </button>
 <!-------------------------------------------------------------------->
 <!-- BEGIN 2018 -->
@@ -330,7 +374,7 @@ MathJax.Hub.Config({
 <!-- END   2018 -->
 <!-------------------------------------------------------------------->
 <button class="collapsible">
-<h3 class="w3-wide w3-left" style="padding-left:30px;font-weight:700;transform:scale(1.2);color:#444">2017</h3>
+<h3 class="w3-wide w3-left" style="padding-left:30px;font-family:'Roboto',sans-serif;font-weight:700;transform:scale(1.2);color:#444">2017</h3>
 </button>
 <div class="content">
 		<table class="publist">
@@ -413,9 +457,17 @@ MathJax.Hub.Config({
   <!-- END 2017 -->
 		</table>
 </div>
-
+<!--
+<button class="collapsible" style="display:none;">
+<h3 class="w3-wide w3-left" style="padding-left:30px;font-weight:700;transform:scale(1.2)">2016</h3>
+</button>
+<button data-toggle="collapsible" data-target="#confs"
+ style="padding-left:30px;font-weight:700;transform:scale(1.2)">Previous</button>
+<div id="confs" class="content">
+		<table class="publist">
+-->
 <button class="collapsible">
-<h3 class="w3-wide w3-left" style="padding-left:30px;font-weight:700;transform:scale(1.2);color:#444">2016</h3>
+<h3 class="w3-wide w3-left" style="padding-left:30px;font-family:'Roboto',sans-serif;font-weight:700;transform:scale(1.2);color:#444">2016</h3>
 </button>
 <div class="content">
 		<table class="publist">
@@ -479,7 +531,7 @@ MathJax.Hub.Config({
     </table>
 </div>
 <button class="collapsible">
-<h3 class="w3-wide w3-left" style="padding-left:30px;font-weight:700;transform:scale(1.2);color:#444">2015</h3>
+<h3 class="w3-wide w3-left" style="padding-left:30px;font-family:'Roboto',sans-serif;font-weight:700;transform:scale(1.2);color:#444">2015</h3>
 </button>
 <div class="content">
 		<table class="publist">
@@ -538,7 +590,7 @@ MathJax.Hub.Config({
     </table>
 </div>
 <button class="collapsible">
-<h3 class="w3-wide w3-left" style="padding-left:30px;font-weight:700;transform:scale(1.2);color:#444">2014</h3>
+<h3 class="w3-wide w3-left" style="padding-left:30px;font-family:'Roboto',sans-serif;font-weight:700;transform:scale(1.2);color:#444">2014</h3>
 </button>
 <div class="content">
 		<table class="publist">
@@ -624,7 +676,9 @@ MathJax.Hub.Config({
 <!-- END TALKS -->
 <!-------------------------------------------------------------------->
 
-  <!-- The Activities Section -->
+<!-------------------------------------------------------------------->
+<!-- The Activities Section -->
+<!-------------------------------------------------------------------->
 	<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="activities">
     <h2 class="w3-wide w3-center">ACTIVITIES</h2>
     <div class="w3-container w3-topbar w3-light-gray w3-border-gray">
@@ -652,10 +706,96 @@ MathJax.Hub.Config({
   </li>
   </ul>
   -->
-		<table class="publist">
+
 <!-------------------------------------------------------------------->
 <!-- BEGIN ACTIVITIES -->
 <!-------------------------------------------------------------------->
+<table class="publist">
+<tr>
+  <td>08-MAR<span style="color:gray">-21</span>
+  <br>21-MAY<span style="color:gray">-21</span></td>
+  <td><b>New Physics from Precision at High Energies (KITP)</b><br>[Online]</td>
+</tr>
+<tr>
+  <td>10-NOV<span style="color:gray">-20</span>
+  <br>13-NOV<span style="color:gray">-20</span></td>
+  <td><b>4<sup>th</sup> FCC Physics and Experiments Workshop</b><br>[Online]</td>
+</tr>
+<tr>
+  <td>02-NOV<span style="color:gray">-20</span>
+  <br>06-NOV<span style="color:gray">-20</span></td>
+  <td><b>Tools for High Energy Physics and Cosmology (TOOLS 2020)</b><br>[Online]</td>
+</tr>
+<tr>
+  <td>26-OCT<span style="color:gray">-20</span>
+  <br>30-OCT<span style="color:gray">-20</span></td>
+  <td><b>Higgs 2020</b><br>[Online]</td>
+</tr>
+<tr>
+  <td>25-MAY<span style="color:gray">-20</span>
+  <br>30-MAY<span style="color:gray">-20</span></td>
+  <td><b>Large Hadron Collider Physics</b><br>[Online]</td>
+</tr>
+<tr>
+  <td>29-JAN<span style="color:gray">-20</span>
+  <br>31-JAN<span style="color:gray">-20</span></td>
+  <td><b>Probing BSM physics at different scales</b><br>Magnus Haus, Berlin, Germany</td>
+</tr>
+<tr>
+  <td>04-DEC<span style="color:gray">-19</span>
+  <br>05-DEC<span style="color:gray">-19</span></td>
+  <td><b>BSM models in Vector Boson Scattering processes</b><br>LIP, Lisbon, Portugal</td>
+</tr>
+<tr>
+  <td>25-MAY<span style="color:gray">-20</span>
+  <br>30-MAY<span style="color:gray">-20</span></td>
+  <td><b>Large Hadron Collider Physics.</b><br>[Online]</td>
+</tr>
+<tr>
+  <td>09-JAN<span style="color:gray">-20</span>
+  <br>31-JAN<span style="color:gray">-20</span></td>
+  <td><b>Probing BSM physics at different scales.</b><br>Magnus Haus, Berlin, Germany</td>
+</tr>
+<tr>
+  <td>04-DEC<span style="color:gray">-19</span>
+  <br>05-DEC<span style="color:gray">-19</span></td>
+  <td><b>BSM models in Vector Boson Scattering processes.</b><br>LIP, Lisbon, Portugal</td>
+</tr>
+<tr>
+  <td>01-SEP<span style="color:gray">-19</span>
+  <br>15-SEP<span style="color:gray">-19</span></td>
+  <td><b>Summer workshop: The Energy Frontier Beyond the LHC Run 2.</b><br>The Aspen Center for Physics, Aspen, CO, USA</td>
+</tr>
+<tr>
+  <td>02-MAY<span style="color:gray">-19</span>
+  <br>17-MAY<span style="color:gray">-19</span></td>
+  <td><b>The 4<sup>th</sup> NPKI Workshop: Searching for New Physics on the Horizon.</b><br>Seoul, South Korea</td>
+</tr>
+<tr>
+  <td>06-MAY<span style="color:gray">-19</span>
+  <br>10-MAY<span style="color:gray">-19</span></td>
+  <td><b>BSM with Precision Flavour Experiments</b><br>MIAPP, Munich, Germany</td>
+</tr>
+<tr>
+  <td>20-MAY<span style="color:gray">-19</span>
+  <br>24-MAY<span style="color:gray">-19</span></td>
+  <td><b>BSM with Precision Flavour Experiments</b><br>MIAPP, Munich, Germany</td>
+</tr>
+<tr>
+  <td>03-APR<span style="color:gray">-19</span>
+  <br>26-APR<span style="color:gray">-19</span></td>
+  <td><b>SM@LHC</b><br>Zuerich, Switzerland</td>
+</tr>
+
+<!--
+</table>
+
+<button class="collapsible">
+<h3 class="w3-wide w3-left" style="padding-left:30px;font-weight:700;transform:scale(1.2);color:#444">Previous</h3>
+</button>
+<div class="content" style="display:block">
+<table class="publist">
+-->	
 <tr>
   <td>28.JUL<span style="color:gray">.17</span></td>
   <td><b>DMUK: meeting of the UK Dark Matter community</b><br>Edinburgh, Scotland
@@ -804,13 +944,52 @@ MathJax.Hub.Config({
 <!-------------------------------------------------------------------->
 <!-- END ACTIVITIES -->
 <!-------------------------------------------------------------------->
-    </table>
-  </div>
+</table>
+</div>
+</div>
 
 
+<!-------------------------------------------------------------------->
+<!-- The Activities Section -->
+<!-------------------------------------------------------------------->
+<div class="w3-light-grey" id="software">
+	<div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide w3-center">RESEARCH SOFTWARE</h2>
+  <!--
+    <div class="w3-container w3-topbar w3-light-gray w3-border-gray">
+    <h3>Organized events</h3>
+    </div>
+	-->
+	<ul class="fa-ul" itemscope>
+	<li><!--<i class="fa-li fas fa-angle-double-right fa-1x" aria-hidden="true"></i>-->
+	<i class="fa-li fas fa-angle-double-right fa-1x"></i>
+    <code>DirectDM</code>:  <a href="https://directdm.github.io" target="_blank">https://directdm.github.io</a>
+		</br> A program that matches Wilson coefficients of a relativistic EFT onto a Galilean-invariant non-relativistic EFT valid at the nuclear scale.
+  </li>
+	<li><i class="fa-li fas fa-angle-double-right fa-1x" aria-hidden="true"></i>
+    <code>WellPut</code> <span style="font-family:'Roboto',sans-serif;font-weight:300">(Weak Effective Lagrangian Library for Perturbative Unitary Theories)</span>:
+		<a href="https://wellput.github.io" target="_blank">https://wellput.github.io</a>  </br> A tool for matching generic extensions of the SM onto the Weak Effective Lagrangian.
+  </li>
+  </ul>
+  <br>
+  <!--
+	<ul class="fa-ul" itemscope>
+	<li><i class="fa-li fa fa-chevron-right fa-1x" aria-hidden="true"></i>
+    Dalitz seminar in fundamental physics
+  </li>
+  </ul>
+  -->
+
+
+<!-------------------------------------------------------------------->
+<!-- END TALKS -->
+<!-------------------------------------------------------------------->
+</div>
+</div>
+</div>
 
   <!-- The Contact Section -->
-<div class="w3-light-grey" id="contact">
+<div id="contact">
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
     <h2 class="w3-wide w3-center">CONTACT</h2>
     <div class="w3-row w3-padding-32">

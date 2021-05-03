@@ -74,8 +74,9 @@ table.publist{
 }
 
 table.publist td:nth-child(1){
-  font-family: 'Lato';
-  font-weight: bold; 
+  font-family: 'Roboto Mono', monospace;
+  /*font-family: 'Roboto Condensed', sans-serif;*/
+  /*font-weight: bold;*/
   color: #333;
   width: 20%;
   transform: scale(1.1); 
@@ -84,9 +85,11 @@ table.publist td:nth-child(1){
   padding-right: 10px;
 }
 table.publist td:nth-child(2){
+  font-family: 'Roboto', sans-serif;
+  font-size:16pt;
   border-left: thick solid #00A6EB;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 table.publist tr{
   border-top: -5px;
@@ -237,3 +240,11 @@ a:focus {
 }
 
 #talks a:hover { color: #F28E00; }
+
+code {
+  font-family:"Roboto Mono",monospace;
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 100%;
+}
