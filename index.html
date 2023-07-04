@@ -217,7 +217,7 @@ MathJax.Hub.Config({
 <br>University of Basel, Basel, Switzerland</td>
 </tr>
 <tr><td>30-NOV-21</td>
-<td><b>Finite \& gauge-independent matching conditions in generic extensions of the SM</b>
+<td><b>Finite & gauge-independent matching conditions in generic extensions of the SM</b>
 <br>Quantum Universe Day, DESY, Hamburg</td>
 </tr>
 <tr><td>29-JUL-21</td>
@@ -1113,6 +1113,16 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+// Add the w3-red class to all opened accordions
+var x = document.getElementById(id);
+if (x.className.indexOf("w3-show") == -1) {
+  x.className += " w3-show";
+	  x.previousElementSibling.className += " w3-red";
+		} else {
+		  x.className = x.className.replace("w3-show", "");
+			  x.previousElementSibling.className =
+				  x.previousElementSibling.className.replace("w3-red", "");
+					} 
 </script>
 <script>
 var slideIndex = 1;
