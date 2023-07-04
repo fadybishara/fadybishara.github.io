@@ -203,7 +203,9 @@ a:focus {
 }
 
 .active, .collapsible:hover {
-  background-color: #c6c6c6;
+  /* background-color: #c6c6c6; 
+  background-color: #009FDF;*/
+  background-color: #f0ce66; /*#E6A90F;*/
 }
 
 .collapsible:after {
